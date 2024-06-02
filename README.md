@@ -13,16 +13,11 @@ Zooniverse is a citizen science website, allowing users to participate in active
 
 Users' responses were then stored and later analysed by myself for my fourth year MSci project. The user data I worked with was from the second iteration of the 'Planet Four: Ridges' project.
 
-### Goal of this project
-
-The aim of this project is to use Fourier Transforms of ridge images to identify common features. These features can then be used for automated detection of ridges.
-
 ### Method
 
-User-generated data has been aquired previously, including a full list of subject image IDs for the images stored on Zooniverse. Therefore, we start analysis by:
-- Scrape Zooniverse to retrieve image (webscraper.ipynb)
-- Perform Fourier Transform of the image and store the result in DB (transform_images.ipynb)
+User-generated data has been aquired previously, including a full list of subject image IDs for the images stored on Zooniverse. Therefore, we start by creating a webscraper to retrieve the subject image from a provided Zooniverse URL (webscraper.ipynb).
+Next the images are grouped by the three classifications listed in the above section.  This is determined using the analysis of user responses I previously conducted in my Master's project.
+The groups will be analysed separately and compared to identify the ridges as 'unique' features. This will be investigated using Fourier Transforms as a 'from scratch' method. I will also use PyTorch to leverage existing models and compare results of these two approaches.
 
-These steps are completed using each Image ID.
 
-*Further steps to continue analysis to follow*
+*Further details on existing and future analysis to follow*
