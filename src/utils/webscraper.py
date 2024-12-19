@@ -5,6 +5,15 @@ import os
 import requests
 
 def download_image(url, save_dir, file_name):
+    """
+    Download an image from Zooniverse webpage.
+
+    Args:
+    url (str): The URL of the webpage.
+    save_dir (str): The directory to save the image.
+    file_name (str): The name of the image file.
+    """
+
     # Check if save_dir exists, if not create it
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
